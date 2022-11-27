@@ -7,3 +7,8 @@
     font-weight: var(--fw-h2);
     font-size: var(--fs-h2);
 }
+
+.article__body {
+    font-weight: var(--fw-body);
+    font-size: var(--fs-body);
+}

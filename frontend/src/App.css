@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  
+  --fw-h1: 600;
+  --fw-h2: 400;
+  --fw-body: 200;
+
+  --fs-h1: 2.5em;
+  --fs-h2: 1.8em;
+  --fs-body: 1.2em;
+
+  --ls-body: .5px;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  --clr-light: #ffffffde;
+  --clr-dark: #242424;
+  --clr-accent: #3aaa61;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+img { width: 100% }

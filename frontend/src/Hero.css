@@ -1,0 +1,17 @@
+.hero {
+    margin: 2em auto 0;
+    padding: 2em 4em;
+}
+
+.hero__title {
+    font-size: var(--fs-h1);
+    font-weight: var(--fs-h1);
+    color: var(--clr-accent);
+    margin: 0 auto;
+}
+
+.hero__subtitle {
+    font-size: var(--fs-body);
+    font-weight: var(--fw-body);
+    letter-spacing: var(--ls-body);
+}

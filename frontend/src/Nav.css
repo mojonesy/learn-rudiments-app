@@ -1,0 +1,111 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+}
+
+.logo {
+    width: 10em;
+    height: 4em;
+    object-fit: contain;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 0;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: var(--clr-light);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-body);
+    margin-left: 1em;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+}
+
+.nav__link:hover { 
+    color: var(--clr-accent);
+    transition: 200ms ease-in-out
+}
+
+.nav-toggle { display: none }
+
+
+@media (max-width: 768px) {
+    .logo {
+        width: 8.5em;
+        height: 2.5em;
+    }
+
+    .nav-toggle {
+        display: block;
+        background: transparent;
+        border: none;
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        cursor: pointer;
+        padding: 1em 1em 2em;
+        z-index: 100;
+    }
+
+    .nav-open .nav {
+        transform: translateX(0);
+        transition: 500ms ease-in-out;
+    }
+
+    .nav {
+        margin: 0 auto;
+        position: absolute;
+        inset: 0;
+        height: 100vh;
+        background-color: rgba(74, 74, 74, 0.85);
+        z-index: 10;
+        transform: translateX(100%);
+        transition: 500ms ease-in-out;
+    }
+
+    .nav__list {
+        height: 80vh;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .nav-open .hamburger {
+        transform: rotate(-135deg);
+        transition: 300ms ease-in-out;
+    }
+    
+    .nav-open .hamburger::before {
+        transform: rotate(-90deg) translateX(12px);
+        transition: 300ms ease-in-out;
+    }
+    
+    .hamburger {
+        position: relative;
+        display: block;
+    }
+    
+    .hamburger,
+    .hamburger::before {
+        background-color: var(--clr-accent);
+        width: 1.8em;
+        height: 3px;
+        border-radius: 2px;
+        transition: 300ms ease-in-out;
+    }
+    
+    .hamburger::before {
+        position: absolute;
+        content: '';
+        top: 12px;
+        left: 0;
+        right: 0;
+    }
+}

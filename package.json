@@ -2,7 +2,6 @@
   "name": "learn-rudiments-app",
   "version": "1.0.0",
   "description": "Snare Drum Rudiments App",
-  "main": "index.js",
   "scripts": {
     "start": "npx concurrently 'npm run start:backend' 'npm run start:frontend'",
     "start:backend": "npm --prefix ./backend start",
@@ -10,6 +9,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Molly Jones",
   "license": "ISC"
 }
